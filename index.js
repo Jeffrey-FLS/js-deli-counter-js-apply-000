@@ -2,8 +2,8 @@ let katzDeliLine = [];
 let numOfCustomer = 0;
 
 function takeANumber(katzDeliLine) {
-  katzDeliLine.push(numOfCustomer + 1);
-  return `Welcome, you are ticket number ${katzDeliLine.length} in line.`;
+  katzDeliLine.push(++numOfCustomer);
+  return `Welcome, you are ticket number ${numOfCustomer} in line.`;
 }
 
 function nowServing(katzDeliLine) {
